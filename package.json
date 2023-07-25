@@ -1,0 +1,22 @@
+{
+  "name": "my-component-generator",
+  "version": "1.0.0",
+  "description": "A react CLI to generate new component",
+  "main": "index.js",
+  "bin": {
+    "my-component-generator": "index.js"
+  },
+  "scripts": {},
+  "keywords": [
+    "new-components-react",
+    "component-generator"
+  ],
+  "author": "Imran H Rafi",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.1.4",
+    "path": "^0.12.7"
+  }
+}
