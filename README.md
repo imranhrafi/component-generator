@@ -15,7 +15,7 @@ A React CLI tool to generate new components effortlessly.
 
 ## Introduction
 
-My Component Generator is a command-line tool that simplifies the process of creating new React components in your project. It provides an easy-to-use interface that lets you choose the file type (JSX or TSX) and the preferred styling option (CSS Module, Styled Components, CSS, or SCSS) for the component.
+My Component Generator is a command-line tool that simplifies the process of creating new React components in your project. It provides an easy-to-use interface that lets you create component with css modules
 
 With this tool, you can save time and effort when creating new components, as it automatically generates the component file and the associated styling file based on your preferences.
 
@@ -41,7 +41,9 @@ yarn global add my-component-generator
 configure in your package.json to run components
 
 ```bash
+script{
 "new-component": "my-component-generator"
+}
 ```
 
 To create a new component, open your terminal or command prompt and run the following command:
@@ -60,12 +62,35 @@ To create a new component named "Button" in the default "components" directory:
 
 ```bash
 npm run new-component Button
+
+```
+
+```bash
+
+src/
+  └── components/
+      └── Button/
+          ├── Button.jsx
+          ├── Button.module.css
+          └── index.js
+
 ```
 
 To create a new component named "Header" in a custom directory "src/components/layout":
 
 ```bash
 npm run new-component Header src/components/layout
+```
+
+```bash
+src/
+  └── components/
+      └── layout/
+          └── Header/
+              ├── Header.jsx
+              ├── Header.module.css
+              └── index.js
+
 ```
 
 ### Using npm script
